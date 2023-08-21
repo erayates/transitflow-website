@@ -9,9 +9,18 @@
     justify-content: space-between;
 }
 
+.header{
+    position: relative;
+    z-index: 2;
+}
+
 .headerTop{
+    display: flex;
+    align-items: center;
     background-color: var(--primary-second);
-    padding: 40px 0;
+    height: 120px;
+    z-index: 2;
+    
 }
 
 .headerInfo{

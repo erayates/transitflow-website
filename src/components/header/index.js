@@ -17,7 +17,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className={krub.className}>
+    <header className={styles.header}>
       <div className={styles.headerTop}>
         <div className={styles.container}>
           <Image
