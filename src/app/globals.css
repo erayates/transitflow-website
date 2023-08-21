@@ -22,7 +22,7 @@
 
 body {
   line-height: 1.5;
-  background: linear-gradient(180deg, #eef2ff, rgba(238, 242, 255, 0));
+  background: #fff;
   min-height: 100vh;
   font-size: var(--font-size-s);
   color: var(--dark-light);
