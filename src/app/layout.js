@@ -1,8 +1,10 @@
 import "./reset.css";
 import "./globals.css";
-import { Rubik } from "next/font/google";
+import { Krub, Rubik } from "next/font/google";
+import Header from "@/components/header";
 
 const rubik = Rubik({ subsets: ["latin"] });
+export const krub = Krub({subsets: ["latin"], weight: ['200','300','400']});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={rubik.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
