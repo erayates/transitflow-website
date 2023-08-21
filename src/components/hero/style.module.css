@@ -1,9 +1,7 @@
 .hero {
-  position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  top: 0;
   height: 100vh;
   z-index: 0;
   width: 100%;
