@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./style.module.css";
 import WhatWeDo from "./what-we-do";
 import WhyUs from "./why-us";
+import Services from "./services";
 
 function HomeContainer() {
   return (
@@ -10,6 +11,7 @@ function HomeContainer() {
       <Hero />
       <WhatWeDo />
       <WhyUs />
+      <Services />
     </main>
   );
 }
