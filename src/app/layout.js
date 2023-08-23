@@ -1,10 +1,14 @@
 import "./reset.css";
 import "./globals.css";
-import { Krub, Rubik } from "next/font/google";
+import { Krub, League_Spartan, Rubik } from "next/font/google";
 import Header from "@/components/header";
 
 const rubik = Rubik({ subsets: ["latin"] });
-export const krub = Krub({subsets: ["latin"], weight: ['200','300','400']});
+export const krub = Krub({ subsets: ["latin"], weight: ["200", "300", "400"] });
+export const leagueSpartan = League_Spartan({
+  subsets: ["latin"],
+  weight: ["200", "300", "400"],
+});
 
 export const metadata = {
   title: "Create Next App",

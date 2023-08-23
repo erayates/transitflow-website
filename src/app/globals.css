@@ -1,11 +1,19 @@
-:root{
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;600;700&display=swap");
+
+:root {
   /* Colors */
-  --primary: #FFBE34;
+  --primary: #ffbe34;
   --primary-second: #091242;
-  --secondary: #F4F4F4;
-  --dark: #1C1F35;
-  --dark-light: #666C89;
-  --gradient: linear-gradient(90deg, rgba(255,182,41,1) 0%, rgba(255,218,86,1) 50%, rgba(255,215,166,1) 100%);
+  --secondary: #f4f4f4;
+  --dark: #1c1f35;
+  --dark-light: #666c89;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 182, 41, 1) 0%,
+    rgba(255, 218, 86, 1) 50%,
+    rgba(255, 215, 166, 1) 100%
+  );
 
   /* Font Sizes */
   --font-size-xxl: 64px;
@@ -16,8 +24,6 @@
   --font-size-xs: 16px;
   --font-size-xsm: 14px;
   --font-size-xxs: 13px;
-
-
 }
 
 body {

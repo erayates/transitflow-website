@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 60%;
+  padding: 40px 0;
+}
+
+.inputRow {
+  display: flex;
+  gap: 20px;
+}
+
+.inputRow > input,
+.textarea {
+  background-color: transparent;
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #4e5683;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: var(--font-size-xs);
+  outline: none;
+}
+
+.inputRow > input::placeholder,
+.textarea::placeholder {
+  color: #fff;
+  font-weight: 200;
+}
+
+.textarea {
+  resize: none;
+}
+
+.button {
+  color: var(--dark);
+  background: var(--gradient);
+  width: fit-content;
+  font-weight: bold;
+  font-family: 'Krub', sans-serif;
+  padding: 20px 30px;
+}

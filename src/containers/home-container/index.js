@@ -6,6 +6,8 @@ import WhyUs from "./why-us";
 import Services from "./services";
 import Testimonial from "@/components/testimonial";
 import WhyChoose from "./why-choose";
+import Team from "@/components/team";
+import Contact from "@/components/contact";
 
 function HomeContainer() {
   return (
@@ -16,6 +18,8 @@ function HomeContainer() {
       <Services />
       <Testimonial />
       <WhyChoose />
+      <Team />
+      <Contact />
     </main>
   );
 }
