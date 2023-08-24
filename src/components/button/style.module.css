@@ -1,11 +1,11 @@
 .button {
   position: relative;
-  width: 160px;
+  width: 170px;
   height: 50px;
   font-size: var(--font-size-xsm);
-  font-weight: 600;
+  font-weight: 500;
   overflow: hidden;
-  font-family: inherit;
+  font-family: 'Krub', sans-serif;
 }
 
 .button:hover .buttonEffectItem {

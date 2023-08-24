@@ -111,9 +111,9 @@
   background-color: #e8e8e8;
   border-left: 3px solid #ffda56;
   width: fit-content;
-  padding: 0 10px;
+  padding: 5px 10px;
   color: var(--dark);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
 }
 
 .title {

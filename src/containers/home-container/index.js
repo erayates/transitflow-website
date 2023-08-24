@@ -8,6 +8,7 @@ import Testimonial from "@/components/testimonial";
 import WhyChoose from "./why-choose";
 import Team from "@/components/team";
 import Contact from "@/components/contact";
+import LatestNews from "@/components/latest-news";
 
 function HomeContainer() {
   return (
@@ -20,6 +21,7 @@ function HomeContainer() {
       <WhyChoose />
       <Team />
       <Contact />
+      <LatestNews />
     </main>
   );
 }
