@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  height: max-content;
+  background-color: #091242;
+}
+
+.footerUpper {
+  background-color: rgba(255, 255, 255, 8%);
+  width: 100%;
+}
+
+.footerUpper > div {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+}
+
+.footerUpper > div > div:first-child {
+  background-color: #091242;
+}
+
+.footerUpper > div > div {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: var(--font-size-sm);
+  padding: 2.2rem;
+}
+
+.footerMid > div {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+}
+
+.footerMid > div > div {
+  flex-direction: column;
+  display: flex;
+  color: #fff;
+  font-size: var(--font-size-xsm);
+  padding: 2.2rem;
+}
+
+.footerMid > div > div > ul {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: fit-content;
+  font-weight: 200;
+}
+
+.footerMid > div > div:first-child {
+  gap: 25px;
+  flex-direction: column;
+}
+
+.footerMid > div > div:first-child p {
+  line-height: 1.25;
+  font-size: var(--font-size-xsm);
+  font-weight: 200;
+}
+
+.footerMid > div > div:first-child > div {
+  display: flex;
+  align-items: center;
+}
+
+.footerMidLastChild {
+  gap: 20px;
+}
+
+.footerMidLastChild > input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  font-family: "League Spartan", sans-serif;
+  padding: 15px 20px;
+  border: 1px solid #4e5683;
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  color: #999999;
+}
+
+.footerMidLastChild > input::placeholder {
+  font-family: "League Spartan", sans-serif;
+}
+
+.footerMidLastChild button {
+  background: var(--gradient);
+  color: var(--dark);
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  padding: 15px 25px;
+}
+
+.footerMidLastChild > div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footerMidLastChild > div > div {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 60px;
+  border-radius: 50%;
+  background-color: #111c55;
+  border: 1px solid #273270;
+  padding: 18px;
+  color: #f6b426;
+}
+
+.footerBottom {
+  padding: 25px 0;
+  border: 1px solid #4e5683;
+}
+
+.footerBottom > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-xxs);
+  font-weight: 400;
+}
+
+.footerBottom > div > p{
+  color: #fff;
+}
+
+.footerBottom ul {
+  display: flex;
+  gap: 25px;
+}

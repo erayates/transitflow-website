@@ -9,6 +9,7 @@ import WhyChoose from "./why-choose";
 import Team from "@/components/team";
 import Contact from "@/components/contact";
 import LatestNews from "@/components/latest-news";
+import FooterPhoto from "./footer-photo";
 
 function HomeContainer() {
   return (
@@ -22,6 +23,7 @@ function HomeContainer() {
       <Team />
       <Contact />
       <LatestNews />
+      <FooterPhoto />
     </main>
   );
 }
