@@ -1,0 +1,97 @@
+.section{
+    margin: 6rem 0;
+}
+
+.section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header > p {
+  font-size: var(--font-size-xxs);
+  background-color: #e8e8e8;
+  padding: 5px 10px;
+  border-left: 3px solid var(--primary);
+  color: var(--dark);
+}
+
+.header > h2 {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  gap: 50px;
+}
+
+.item h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item > div{
+    display: flex;
+    align-items: flex-end;
+}
+
+.item > div > p{
+    font-size: var(--font-size-xxl);
+    line-height: 0.75;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.item:nth-child(odd){
+    color: var(--dark);
+    background-color: #f8f8f8;
+}
+
+.item:nth-child(even){
+    color: #fff;
+    background-color: #091242;
+}
+
+.item:nth-child(even) > .itemPrice > p{
+    color: #fff;
+}
+
+.item:nth-child(even) li{
+    border-color: #1F2A69 !important;
+}
+
+.item ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.item ul li{
+    font-size: var(--font-size-xsm);
+    border-top: 1px solid #D6D6D6;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.item ul li:last-child{
+    border-bottom: 1px solid #d6d6d6;
+}

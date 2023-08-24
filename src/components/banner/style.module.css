@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  margin-top: -70px;
+  height: 400px;
+  width: 100%;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90.9deg,
+    #032d5f 19.56%,
+    rgba(9, 18, 66, 0.3) 43.06%
+  );
+  z-index: -1;
+}
+
+.banner > div:first-child{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    z-index: 99;
+}
+
+.subtitle{
+    background-color: rgba(4,28,55,50%);
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: var(--font-size-xxs);
+    border-left: 3px solid var(--primary);
+}
+
+.title{
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    margin: 10px 0;
+}
