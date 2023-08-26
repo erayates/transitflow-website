@@ -1,5 +1,6 @@
 import Banner from "@/components/banner";
 import Contact from "@/components/contact";
+import FAQ from "@/components/faq";
 import React from "react";
 
 function ContactContainer() {
@@ -11,6 +12,7 @@ function ContactContainer() {
         image="contact-us-banner.jpg"
       />
       <Contact />
+      <FAQ />
     </main>
   );
 }
