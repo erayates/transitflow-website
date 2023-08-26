@@ -1,0 +1,117 @@
+.section {
+  padding: 6rem 0;
+}
+
+.section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.postContent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postImage {
+  position: relative;
+  height: 400px;
+}
+
+.postTexts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.postTitle {
+  font-size: 24px;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.postDescription {
+  font-size: var(--font-size-xsm);
+  color: var(--dark-light);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.postBenefit {
+  display: flex;
+  position: relative;
+}
+
+.postBenefit > div:first-child {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  gap: 20px;
+  min-width: 45%;
+}
+
+.postBenefit > div:last-child {
+  position: relative;
+  min-width: 55%;
+}
+
+.postBenefit > div:first-child > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 20px;
+  color: var(--dark);
+}
+
+.postHow {
+  position: relative;
+  display: flex;
+}
+
+.postHow > div:first-child {
+  position: relative;
+  min-width: 55%;
+}
+
+.postHow > div:first-child > button {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(30px, 30px);
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  color: var(--dark);
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 2s infinite;
+}
+
+.postHow > div:last-child {
+  min-width: 45%;
+  padding: 60px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
