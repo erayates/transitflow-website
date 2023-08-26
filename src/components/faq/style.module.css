@@ -1,3 +1,15 @@
+.section {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 6rem 0;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
 .subtitle {
   background-color: #e8e8e8;
   padding: 5px 10px;
@@ -11,11 +23,21 @@
   color: var(--dark);
   font-size: var(--font-size-md);
   font-weight: 600;
+  max-width: 300px;
+}
+
+.accordions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
 }
 
 .accordionHeader {
   display: flex;
   align-items: center;
+  gap: 100px;
   justify-content: space-between;
   color: var(--dark);
 }
@@ -32,8 +54,16 @@
   font-size: 18px;
 }
 
-.accordionContent{
-    display: none;
+.accordionContent {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.accordionContent.active {
+  opacity: 1;
+  height: auto;
 }
 
 .accordionContent > p {
@@ -42,16 +72,66 @@
   color: var(--dark-light);
 }
 
-.left{
-    max-width: 50%;
+.content {
+  display: flex;
 }
 
-.right{
-    width: 50%;
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 50%;
 }
 
-.image{
-    position: relative;
-    width: 100%;
-    height: 100%;
+.right {
+  position: relative;
+  width: 50%;
+  min-height: 400px;
+  margin-left: 200px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #091242;
+  color: #fff;
+  padding: 40px;
+  width: fit-content;
+}
+
+.rightBox > div {
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+  font-size: var(--font-size-xsm);
+}
+
+.rightBox > div > div:first-child {
+  margin-right: 10px;
+  background-color: #111c55;
+  border: 1px solid #2d3a7b;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.rightBoxSubtitle {
+  font-size: var(--font-size-xxs);
+  background-color: #111c55;
+  width: fit-content;
+  border-left: 3px solid var(--primary);
+  padding: 5px 10px;
+}
+
+.rightBoxTitle {
+  max-width: 300px;
 }

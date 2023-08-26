@@ -8,6 +8,8 @@ import Testimonial from "@/components/testimonial";
 import PricingTable from "@/components/pricing-table";
 import FAQ from "@/components/faq";
 
+import styles from "./style.module.css";
+
 function AboutContainer() {
   return (
     <main>
@@ -21,7 +23,9 @@ function AboutContainer() {
       <WhatWeDo />
 
       <Team />
-      <Testimonial />
+      <div className={styles.testimonialDiv}>
+        <Testimonial />
+      </div>
       <PricingTable />
       <FAQ />
     </main>
