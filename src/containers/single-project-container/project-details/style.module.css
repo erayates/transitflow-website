@@ -1,0 +1,42 @@
+.section {
+  padding: 6rem 0;
+  background-color: #f4f4f4;
+}
+.section > div {
+  display: flex;
+}
+
+.left {
+  position: relative;
+  width: 60%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+
+.right > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.right > div {
+  display: flex;
+  gap: 15px;
+  text-align-last: right;
+}
+
+.right p {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.right span {
+  color: var(--dark);
+  font-weight: 400;
+}

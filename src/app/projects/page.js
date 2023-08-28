@@ -1,8 +1,8 @@
 import ProjectContainer from "@/containers/project-container";
 import React from "react";
 
-function Project() {
+function Projects() {
   return <ProjectContainer />;
 }
 
-export default Project;
+export default Projects;

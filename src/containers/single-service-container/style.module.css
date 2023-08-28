@@ -66,6 +66,12 @@
   color: var(--dark);
 }
 
+.postBenefit > div:first-child > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .postHow {
   position: relative;
   display: flex;

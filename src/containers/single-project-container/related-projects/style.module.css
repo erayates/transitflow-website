@@ -1,0 +1,53 @@
+.section {
+  margin: 6rem 0;
+}
+
+.section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+}
+
+.galleryItem {
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+}
+
+.galleryItem:hover .itemHover {
+  opacity: 1;
+}
+
+.galleryItem img {
+  object-fit: cover;
+}
+
+.itemHover {
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(28, 31, 53, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  gap: 5px;
+}

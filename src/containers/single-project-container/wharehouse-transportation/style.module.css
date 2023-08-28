@@ -1,0 +1,35 @@
+.section{
+    margin: 5rem 0;
+}
+.section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.description{
+    color: var(--dark-light);
+    line-height: 1.25;
+    font-size: var(--font-size-xsm);
+}
+
+.section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--font-size-xsm);
+}
+
+.section ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--dark);
+    font-weight: 500;
+}

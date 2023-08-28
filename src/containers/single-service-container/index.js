@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./style.module.css";
 import Image from "next/image";
-import { BiArrowFromRight } from "react-icons/bi";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsFillPlayFill } from "react-icons/bs";
 
 function SingleServiceContainer() {
@@ -68,16 +68,18 @@ function SingleServiceContainer() {
               </p>
               <ul>
                 <li>
-                  <BiArrowFromRight /> Clearance and compliance service
+                  <AiOutlineArrowRight /> Clearance and compliance service
                 </li>
                 <li>
-                  <BiArrowFromRight /> Saving time to Deal with commodo iaculis
+                  <AiOutlineArrowRight /> Saving time to Deal with commodo
+                  iaculis
                 </li>
                 <li>
-                  <BiArrowFromRight /> Automate your business elis tristique
+                  <AiOutlineArrowRight /> Automate your business elis tristique
                 </li>
                 <li>
-                  <BiArrowFromRight /> Saving time to deal with commodo iaculis
+                  <AiOutlineArrowRight /> Saving time to deal with commodo
+                  iaculis
                 </li>
               </ul>
             </div>
