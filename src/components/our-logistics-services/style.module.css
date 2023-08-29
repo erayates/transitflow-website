@@ -1,5 +1,4 @@
 .section {
-  background-color: #f4f4f4;
   padding: 6rem 0;
 }
 
@@ -56,6 +55,6 @@
 }
 
 .button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }

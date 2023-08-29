@@ -4,9 +4,9 @@ import React from "react";
 import styles from "./style.module.css";
 import Button from "@/components/button";
 
-function WhatWeDo() {
+function OurLogisticsServices() {
   return (
-    <section id="#what-we-do" className={styles.section}>
+    <section id="#our-logistics-services" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <p className={styles.subtitle}>What We Do</p>
@@ -102,4 +102,4 @@ function WhatWeDo() {
   );
 }
 
-export default WhatWeDo;
+export default OurLogisticsServices;
