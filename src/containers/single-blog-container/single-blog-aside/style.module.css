@@ -1,0 +1,81 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.aside > div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 15px;
+}
+
+.aside > div:nth-child(1),
+.aside > div:nth-child(2) {
+  background-color: #f5f5f5;
+}
+
+.aside > div:nth-child(1) > h4,
+.aside > div:nth-child(2) > h4 {
+  color: var(--dark);
+}
+
+.aside > div > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside > div:nth-child(2) > p {
+  font-size: var(--font-size-xsm);
+  line-height: 1.25;
+}
+
+.categories > ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: var(--font-size-xsm);
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.categories > ul span {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.help > button {
+  color: var(--dark);
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  padding: 1rem 2.25rem;
+  width: fit-content;
+  background: var(--gradient);
+}
+
+.contact {
+  background-color: #091242;
+}
+
+.contact > h4 {
+  color: #fff;
+  border-left: 3px solid var(--primary);
+  padding-left: 0.5rem;
+}
+
+.contact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: var(--font-size-xsm);
+  color: #fff;
+  font-weight: 200;
+}
+
+.divider {
+    margin: 0.5rem 0;
+  background-color: #1d2342;
+  width: 100%;
+  height: 1px !important;
+}
