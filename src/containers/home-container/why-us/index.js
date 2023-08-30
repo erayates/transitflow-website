@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function WhyUs() {
   return (
-    <section id="#why-us">
+    <section id="#why-us" className={styles.section}>
       <div className={styles.banner}>
         <Image src="/assets/images/why-us-banner.jpg" fill objectFit="cover" />
         <div className={styles.bannerGradient} />
@@ -49,8 +49,9 @@ function WhyUs() {
           <Image
             src="/assets/images/why-us-image.jpg"
             alt="Why Us Image"
-            width={600}
-            height={350}
+            fill
+            objectFit="cover"
+            objectPosition="center"
           />
           <Image
             src="/assets/images/why-us-image-small.jpg"

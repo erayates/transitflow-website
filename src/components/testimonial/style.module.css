@@ -128,3 +128,18 @@
   font-weight: 400;
   line-height: 0.75;
 }
+
+
+@media screen and (max-width: 768px) {
+  .content{
+    flex-direction: column !important;
+  }
+
+  .item{
+    padding: 40px;
+  }
+
+  .header > div > div {
+    display: none;
+  }
+}

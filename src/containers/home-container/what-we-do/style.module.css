@@ -68,3 +68,10 @@
   padding-left: 20px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width:768px){
+  .container{
+    flex-direction: column;
+    gap: 20px;
+  }
+}

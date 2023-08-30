@@ -41,3 +41,11 @@
   font-family: 'Krub', sans-serif;
   padding: 20px 30px;
 }
+
+
+@media screen and (max-width: 768px){
+  .inputRow{
+    display: flex;
+    flex-direction: column;
+  }
+}

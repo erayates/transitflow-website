@@ -124,3 +124,31 @@
     justify-content: center;
     margin-top: 2rem;
 }
+
+
+@media screen and (max-width: 1024px){
+  .postImage{
+    min-height: 350px;
+  }
+
+  .postDate{
+    align-items: flex-start;
+  }
+
+  .postContent{
+    border-left: none;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8e8e8;
+    padding-left: 0;
+  }
+
+  .post{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .blog{
+    padding: 30px;
+  }
+}

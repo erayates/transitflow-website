@@ -5,7 +5,7 @@ import Button from "@/components/button";
 
 function Services() {
   return (
-    <section id="#services">
+    <section id="#services" className={styles.section}>
       <h2 className={styles.title}>Transporting Across The World</h2>
       <div className={styles.items}>
         <div className={styles.item}>
