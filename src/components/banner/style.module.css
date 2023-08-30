@@ -21,30 +21,33 @@
   top: 0;
   left: 0;
   background: linear-gradient(
-    rgba(9, 18, 66, 0.3) 43.06%
+    90.96deg,
+    #032d5f 17.98%,
+    rgba(9, 18, 66, 0.3) 43.08%
   );
+
   z-index: -1;
 }
 
-.banner > div:first-child{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    z-index: 99;
+.banner > div:first-child {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  z-index: 99;
 }
 
-.subtitle{
-    background-color: rgba(4,28,55,50%);
-    width: fit-content;
-    padding: 5px 10px;
-    font-size: var(--font-size-xxs);
-    border-left: 3px solid var(--primary);
+.subtitle {
+  background-color: rgba(4, 28, 55, 50%);
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: var(--font-size-xxs);
+  border-left: 3px solid var(--primary);
 }
 
-.title{
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    margin: 10px 0;
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin: 10px 0;
 }
