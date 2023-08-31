@@ -104,9 +104,13 @@
 }
 
 .postHow > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   min-width: 45%;
   padding: 60px;
 }
+
 
 @keyframes pulse {
   0% {
@@ -119,5 +123,25 @@
 
   100% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .postBenefit {
+    flex-direction: column;
+  }
+
+  .postBenefit > div:last-child,
+  .postHow > div:first-child {
+    margin-top: 2rem;
+    min-height: 400px;
+  }
+
+  .postHow {
+    flex-direction: column-reverse;
+  }
+
+  .postHow > div:last-child {
+    padding: 0;
   }
 }

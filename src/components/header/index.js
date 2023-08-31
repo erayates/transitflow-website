@@ -66,7 +66,7 @@ function Header() {
               <Link href="/projects" className={styles.navigationItem}>
                 Project
               </Link>
-              <Link href="/contact" className={styles.navigationItem}>
+              <Link href="/contact-us" className={styles.navigationItem}>
                 Contact
               </Link>
             </ul>

@@ -46,3 +46,10 @@
     font-weight: 500;
     color: var(--dark);
 }
+
+
+@media screen and (max-width: 768px){
+  .error{
+    font-size: 150px;
+  }
+}
