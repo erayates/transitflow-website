@@ -12,7 +12,6 @@ import { FaFacebook } from "react-icons/fa";
 
 import styles from "./style.module.css";
 import Image from "next/image";
-import { krub } from "@/app/layout";
 import Link from "next/link";
 
 function Header() {
@@ -64,7 +63,7 @@ function Header() {
               <Link href="" className={styles.navigationItem}>
                 Pages
               </Link>
-              <Link href="/project" className={styles.navigationItem}>
+              <Link href="/projects" className={styles.navigationItem}>
                 Project
               </Link>
               <Link href="/contact" className={styles.navigationItem}>

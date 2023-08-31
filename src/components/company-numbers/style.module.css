@@ -38,3 +38,26 @@
   max-width: 1px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+@media screen and (max-width: 1366px){
+  .innerNumbers > div{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .innerNumbers {
+    flex-wrap: wrap;
+  }
+
+  .innerNumbers > div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .innerNumbers > div:last-child{
+    border-bottom: 0;
+  }
+}
