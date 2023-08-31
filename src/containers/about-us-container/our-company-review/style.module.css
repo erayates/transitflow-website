@@ -1,69 +1,95 @@
 .section {
-    margin: 6rem 0;
-  }
-  
+  margin: 6rem 0;
+}
+
+.section > div {
+  display: flex;
+}
+
+.contentLeft {
+  position: relative;
+  min-width: 50%;
+  margin-right: 4rem;
+}
+
+.smallPhoto {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  border: 20px solid #fff;
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  min-width: 50%;
+}
+
+.subtitle {
+  background-color: #e8e8e8;
+  padding: 5px 10px;
+  color: var(--dark);
+  font-size: var(--font-size-xxs);
+  width: fit-content;
+  border-left: 3px solid var(--primary);
+}
+
+.title {
+  color: var(--dark);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
+
+.description {
+  color: var(--dark-light);
+  font-size: var(--font-size-xsm);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons > button {
+  background-color: #f4f4f4;
+  color: var(--dark);
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  padding: 15px 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons > button:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
   .section > div {
-    display: flex;
-  }
-  
-  .contentLeft {
-    position: relative;
-    min-width: 50%;
-    margin-right: 4rem;
-  }
-  
-  .smallPhoto{
-      position: absolute;
-      right: -50px;
-      bottom: -50px;
-      border: 20px solid #fff;
-  }
-  
-  .contentRight {
-    display: flex;
     flex-direction: column;
+  }
+
+  .contentLeft{
+    position: relative;
+    min-height: 500px;
+    margin-right: 0;
+    margin: 10px;
+  }
+
+  .smallPhoto{
+    right: 0;
+  }
+
+  .contentRight{
+    margin-top: 2rem;
+    padding: 10px;
+  }
+
+  .buttons{
+    justify-content: flex-start;
     gap: 20px;
-    padding: 50px;
-    min-width: 50%;
   }
-  
-  .subtitle {
-    background-color: #e8e8e8;
-    padding: 5px 10px;
-    color: var(--dark);
-    font-size: var(--font-size-xxs);
-    width: fit-content;
-    border-left: 3px solid var(--primary);
-  }
-  
-  .title {
-    color: var(--dark);
-    font-size: var(--font-size-md);
-    font-weight: 600;
-  }
-  
-  .description {
-    color: var(--dark-light);
-    font-size: var(--font-size-xsm);
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .buttons > button {
-    background-color: #f4f4f4;
-    color: var(--dark);
-    font-family: "Krub", sans-serif;
-    font-weight: 600;
-    padding: 15px 20px;
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .buttons > button:hover {
-    background-color: var(--primary);
-    color: #fff;
-    transition: all 0.4s ease-in-out;
-  }
-  
+}

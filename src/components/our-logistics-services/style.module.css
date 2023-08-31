@@ -58,3 +58,21 @@
   display: flex;
   justify-content: center;
 }
+
+
+@media screen and (max-width: 768px){
+  .content{
+    row-gap: 50px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width: 520px){
+  .content{
+    row-gap: 50px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+}

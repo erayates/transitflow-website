@@ -135,3 +135,37 @@
 .rightBoxTitle {
   max-width: 300px;
 }
+
+
+@media screen and (max-width: 1366px){
+  .left{
+    min-width: 100%;
+  }
+  .content{
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .section{
+    flex-direction: column;
+  }
+
+  .right{
+    margin-top: 10rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .rightBox{
+    top: 0;
+    height: 100%;
+    right: 0;
+    left: 0;
+    transform: translate(0);
+  }
+
+  .image{
+    min-width: 100%;
+  }
+}

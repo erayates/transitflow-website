@@ -58,7 +58,7 @@ function Header() {
               <Link href="/" className={styles.navigationItem}>
                 Home
               </Link>
-              <Link href="/about" className={styles.navigationItem}>
+              <Link href="/about-us" className={styles.navigationItem}>
                 About
               </Link>
               <Link href="" className={styles.navigationItem}>
