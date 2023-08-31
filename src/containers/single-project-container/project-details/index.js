@@ -33,10 +33,6 @@ function ProjectDetails() {
             <p>Status :</p>
             <span>Completed</span>
           </div>
-          <div>
-            <p>Status :</p>
-            <span>Completed</span>
-          </div>
         </div>
       </div>
     </section>

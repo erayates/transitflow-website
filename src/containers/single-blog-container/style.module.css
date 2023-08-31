@@ -5,3 +5,11 @@
   width: 94%;
   margin: 6rem auto;
 }
+
+@media screen and (max-width: 768px){
+  .content{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    grid-template-columns: 1fr;
+  }
+}

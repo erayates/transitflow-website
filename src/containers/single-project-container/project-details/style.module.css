@@ -28,7 +28,11 @@
 .right > div {
   display: flex;
   gap: 15px;
-  text-align-last: right;
+}
+
+.right > div > p {
+  width: 30%;
+  text-align: right;
 }
 
 .right p {
@@ -39,4 +43,41 @@
 .right span {
   color: var(--dark);
   font-weight: 400;
+}
+
+@media screen and (max-width: 1040px) {
+  .left {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section > div {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  .right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .right > div {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .left {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .right > div > p {
+    text-align: left;
+    width: fit-content;
+  }
 }

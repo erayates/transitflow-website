@@ -1,6 +1,5 @@
 .section {
   background-color: #f4f4f4;
-
   padding: 6rem 0;
 }
 
@@ -30,6 +29,7 @@
   width: 50%;
   padding: 60px;
 }
+
 
 .rightItem {
   display: flex;
@@ -75,4 +75,21 @@
   color: var(--dark);
   font-size: var(--font-size-md);
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    padding: 0;
+  }
+  .smallImage {
+    display: none;
+  }
 }
