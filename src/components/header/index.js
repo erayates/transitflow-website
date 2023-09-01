@@ -10,6 +10,8 @@ import {
   AiOutlinePhone,
 } from "react-icons/ai";
 
+import { IoIosArrowDown } from "react-icons/io";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 
 import { FaFacebook } from "react-icons/fa";
@@ -26,12 +28,14 @@ function Header() {
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <div className={styles.container}>
-            <Image
-              src="/assets/images/logo.png"
-              alt="site-logo"
-              width={180}
-              height={30}
-            />
+            <Link href="/">
+              <Image
+                src="/assets/images/logo.png"
+                alt="site-logo"
+                width={180}
+                height={30}
+              />
+            </Link>
             <div className={styles.headerInfo}>
               <div className={styles.headerInfoItem}>
                 <AiOutlineClockCircle className={styles.headerInfoIcon} />
@@ -55,7 +59,6 @@ function Header() {
                 </div>
               </div>
             </div>
-
             <button
               type="button"
               className={styles.hamburger}
@@ -69,21 +72,52 @@ function Header() {
           <div className={styles.container}>
             <nav>
               <ul className={styles.navigation}>
-                <Link href="/" className={styles.navigationItem}>
-                  Home
-                </Link>
-                <Link href="/about-us" className={styles.navigationItem}>
-                  About
-                </Link>
-                <Link href="" className={styles.navigationItem}>
-                  Pages
-                </Link>
-                <Link href="/projects" className={styles.navigationItem}>
-                  Project
-                </Link>
-                <Link href="/contact-us" className={styles.navigationItem}>
-                  Contact
-                </Link>
+                <li>
+                  <Link href="/" className={styles.navigationItem}>
+                    Home
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/about-us" className={styles.navigationItem}>
+                    About
+                  </Link>
+                </li>
+
+                <li className={styles.subMenuParent}>
+                  <Link href="#" className={styles.navigationItem}>
+                    Pages
+                    <IoIosArrowDown />
+                  </Link>
+                  <div className={styles.subMenu}>
+                    <ul>
+                      <li>
+                        <Link href="/blog">Blog</Link>
+                      </li>
+                      <li>
+                        <Link href="/services">Services</Link>
+                      </li>
+                      <li>
+                        <Link href="/team">Team</Link>
+                      </li>
+                      <li>
+                        <Link href="/pricing">Pricing</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <Link href="/projects" className={styles.navigationItem}>
+                    Project
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/contact-us" className={styles.navigationItem}>
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </nav>
             <div className={styles.headerBottomRight}>

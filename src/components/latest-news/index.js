@@ -23,7 +23,7 @@ function LatestNews() {
                 objectFit="cover"
                 fill
               />
-              <Link href="/">
+              <Link href="/blog/test">
                 <div className={styles.imageHover}>
                   <p>Read More</p>
                   <BiLinkExternal />
@@ -63,7 +63,7 @@ function LatestNews() {
                 objectFit="cover"
                 fill
               />
-              <Link href="/">
+              <Link href="/blog/test">
                 <div className={styles.imageHover}>
                   <p>Read More</p>
                   <BiLinkExternal />
@@ -103,7 +103,7 @@ function LatestNews() {
                 objectFit="cover"
                 fill
               />
-              <Link href="/">
+              <Link href="/blog/test">
                 <div className={styles.imageHover}>
                   <p>Read More</p>
                   <BiLinkExternal />
