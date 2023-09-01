@@ -1,131 +1,159 @@
-
-.container{
-    display: flex;
-    max-width: 1024px;
-    width: 94%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  display: flex;
+  max-width: 1024px;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header{
-    position: relative;
-    z-index: 2;
+.header {
+  position: relative;
+  z-index: 2;
 }
 
-.headerTop{
-    display: flex;
-    align-items: center;
-    background-color: var(--primary-second);
-    height: 120px;
-    z-index: 2;
-    
+.headerTop {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-second);
+  height: 120px;
+  z-index: 2;
 }
 
-.headerInfo{
-    display: flex;
-    gap: 50px;
+.headerInfo {
+  display: flex;
+  gap: 50px;
 }
 
-.headerInfoItem{
-    display: flex;
-    align-items: center;
-    font-size: var(--font-size-xxs);
-    color: #fff;
+.headerInfoItem {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-xxs);
+  color: #fff;
 }
 
-.headerInfoIcon{
-    margin-right: 10px;
-    font-size: 42px;
-    border-radius: 50%;
-    background-color: #111C55;
-    border: 1px solid #273270;
-    padding: 10px;
-    color: #F6B426;
+.headerInfoIcon {
+  margin-right: 10px;
+  font-size: 42px;
+  border-radius: 50%;
+  background-color: #111c55;
+  border: 1px solid #273270;
+  padding: 10px;
+  color: #f6b426;
 }
 
-
-.headerBottom{
-    display: flex;
-    background-color: rgba(9,18,66,25%);
-    height: 70px;
+.headerBottom {
+  display: flex;
+  background-color: rgba(9, 18, 66, 25%);
+  height: 70px;
 }
 
-.headerBottomRight{
-    display: flex;
-    gap: 40px;
+.headerBottomRight {
+  display: flex;
+  gap: 40px;
 }
 
-.navigation{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    height: 70px;
-    color: #fff;
-    font-size: var(--font-size-xxs);
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 70px;
+  color: #fff;
+  font-size: var(--font-size-xxs);
 }
 
-.navigationItem{
-    cursor: pointer;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    position: relative;
-
+.navigationItem {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.navigationItem::before{
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 15px;
-    top: calc(50% - 7.5px);
-    right: -20px;
-    background-color: rgba(255,255,255,0.3);
+.navigationItem::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  top: calc(50% - 7.5px);
+  right: -20px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.navigationItem:last-child::before{
-    content: "";
-    width: 0;
-    height: 0;
+.navigationItem:last-child::before {
+  content: "";
+  width: 0;
+  height: 0;
 }
 
 .navigationItem::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
 .navigationItem:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.socialMedia{
-    display: flex;
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socialMediaIcon {
+  font-size: 18px;
+  height: 20px;
+  color: #fff;
+}
+
+.button {
+  background-color: #fff;
+  height: 70px;
+  font-weight: 600;
+  padding: 0 40px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  height: 24px;
+  color: #fff;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: transform 0.4s linear;
+}
+
+.hamburger:hover {
+  transform: rotate(180deg);
+  transition: transform 0.4s linear;
+}
+
+@media screen and (max-width: 1024px) {
+  .headerInfo,
+  .navigation {
+    display: none;
+  }
+
+  .headerBottomRight {
+    width: 100%;
     align-items: center;
-    gap: 15px;
-}
+    justify-content: space-between;
+  }
 
-.socialMediaIcon{
-    font-size: 18px;
-    height: 20px;
-    color: #fff;
-}
-
-.button{
-    background-color: #fff;
-    height: 70px;
-    font-weight: 600;
-    padding: 0 40px;
-
+  .hamburger {
+    opacity: 1;
+    display: block;
+  }
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Krub, League_Spartan, Rubik } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import MobileMenu from "@/components/mobile-menu";
 
 const rubik = Rubik({ subsets: ["latin"] });
 export const krub = Krub({ subsets: ["latin"], weight: ["200", "300", "400"] });
@@ -17,6 +18,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={rubik.className}>
