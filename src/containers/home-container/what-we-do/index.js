@@ -11,7 +11,12 @@ function WhatWeDo() {
       </div>
       <div className={styles.whatWeDoItem}>
         <div className={styles.itemInnerDiv}>
-          <Image src="/assets/icons/sea-transport.svg" width={50} height={50} />
+          <Image
+            src="/assets/icons/sea-transport.svg"
+            width={50}
+            alt="Sea Transport Icon"
+            height={50}
+          />
           <div className={styles.itemInfo}>
             <h3 className={styles.itemTitle}>Sea Transport Services</h3>
             <p className={styles.itemDescription}>
@@ -21,7 +26,12 @@ function WhatWeDo() {
           </div>
         </div>
         <div className={styles.itemInnerDiv}>
-          <Image src="/assets/icons/air-fright.svg" width={50} height={50} />
+          <Image
+            src="/assets/icons/air-fright.svg"
+            alt="Air Fright Icon"
+            width={50}
+            height={50}
+          />
           <div className={styles.itemInfo}>
             <h3 className={styles.itemTitle}>Air Fright Services</h3>
             <p className={styles.itemDescription}>
@@ -33,7 +43,12 @@ function WhatWeDo() {
       </div>
       <div className={styles.whatWeDoItem}>
         <div className={styles.itemInnerDiv}>
-          <Image src="/assets/icons/warehousing.svg" width={50} height={50} />
+          <Image
+            src="/assets/icons/warehousing.svg"
+            alt="Warehousing Icon"
+            width={50}
+            height={50}
+          />
           <div className={styles.itemInfo}>
             <h3 className={styles.itemTitle}>Warehousing Services</h3>
             <p className={styles.itemDescription}>
@@ -45,6 +60,7 @@ function WhatWeDo() {
         <div div className={styles.itemInnerDiv}>
           <Image
             src="/assets/icons/local-shipping.svg"
+            alt="Local Shipping Icon"
             width={50}
             height={50}
           />

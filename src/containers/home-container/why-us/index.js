@@ -6,7 +6,12 @@ function WhyUs() {
   return (
     <section id="#why-us" className={styles.section}>
       <div className={styles.banner}>
-        <Image src="/assets/images/why-us-banner.jpg" fill objectFit="cover" />
+        <Image
+          src="/assets/images/why-us-banner.jpg"
+          alt="Why Us Banner"
+          fill
+          objectFit="cover"
+        />
         <div className={styles.bannerGradient} />
       </div>
       <div className={styles.container}>

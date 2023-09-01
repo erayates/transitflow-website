@@ -13,7 +13,7 @@ function NotFound() {
           <p>4</p>
         </div>
         <p>Oops! Page not found.</p>
-        <span>Let's get you to where you need to be.</span>
+        <span>{"Let's get you to where you need to be."}</span>
         <Link href="/">Back to home</Link>
       </div>
     </main>

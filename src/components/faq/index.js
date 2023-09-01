@@ -11,15 +11,14 @@ function FAQ() {
   const accordions = useRef([]);
 
   const handleAccordionClick = (idx) => {
-    const arr = [].slice.call(accordions.current.children);
-    arr.map((accordion) => accordion.children[1].style.display = "none");
-
-
     if (accordions.current.children[idx].children[1].style.display === "none") {
+      accordions.current.children[idx].children[0].children[1].style.rotate =
+        "90deg";
       accordions.current.children[idx].children[1].style.display = "block";
       return;
     }
-
+    accordions.current.children[idx].children[0].children[1].style.rotate =
+      "0deg";
     accordions.current.children[idx].children[1].style.display = "none";
   };
 
@@ -114,7 +113,7 @@ function FAQ() {
           />
         </div>
         <div className={styles.rightBox}>
-          <p className={styles.rightBoxSubtitle}>Let's Talk</p>
+          <p className={styles.rightBoxSubtitle}>{"Let's Talk"}</p>
           <h3 className={styles.rightBoxTitle}>
             You Need Any Help? Get Free Consultation
           </h3>

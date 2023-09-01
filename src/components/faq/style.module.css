@@ -54,22 +54,16 @@
   font-size: 18px;
 }
 
-.accordionContent {
-  transition: opacity 1s ease-out;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.accordionContent.active {
-  opacity: 1;
-  height: auto;
+.accordionContent{
+  margin-top: 1rem;
+  display: none;
 }
 
 .accordionContent > p {
   font-size: var(--font-size-xsm);
   line-height: 1.5;
   color: var(--dark-light);
+  transition: rotate .4s ease-in-out;
 }
 
 .content {
